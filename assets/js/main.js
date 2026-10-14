@@ -61,7 +61,7 @@
   );
   sections.forEach((s) => spy.observe(s));
 
-  const revealTargets = document.querySelectorAll(".tl-item, .skill-list, .ach-col");
+  const revealTargets = document.querySelectorAll(".tl-item, .ach-col");
   const revealer = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach((entry) => {
